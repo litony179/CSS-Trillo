@@ -1,15 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <title>Trillo</title>
-</head>
-<body>
-    <h1>Hellllloooooo this is hard</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title>Trillo</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo-logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search_input" placeholder='Search Hotels'>
+                    <button class="search_button">
+                        <svg class="search_icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav_icon-box">
+                        <svg class="user-nav_icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav_notification">7</span>
+                    </div>
+                    <div class="user-nav_icon-box">
+                        <svg class="user-nav_icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav_notification">13</span>
+                    </div>
+                    <div class="user-nav_user">
+                        <img src="img/user.jpg" alt="user photo" class="user-nav_user-photo">
+                        <span class="user-nav_user-name">Tony</span>
+                    </div>
+                </nav>
+                
+            </header>
+
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav_item side-nav_item--active">
+                            <a href="#" class="side-nav_link">
+                                <svg class="side-nav_icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                            
+                        </li>
+                        <li class="side-nav_item">
+                            <a href="#" class="side-nav_link">
+                                <svg class="side-nav_icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span>Flight</span>
+                            </a>
+                        </li>
+                        <li class="side-nav_item">
+                            <a href="#" class="side-nav_link">
+                                <svg class="side-nav_icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span>Car Retals</span>
+                            </a>
+                        </li>
+                        <li class="side-nav_item">
+                            <a href="#" class="side-nav_link">
+                                <svg class="side-nav_icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span>Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        &copy; 2020 by Trillo. All rights reserved.
+                    </div>
+                </nav>
+
+
+
+
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery_item">
+                            <img src="img/hotel-1.jpg" alt="photo of hotel1" class="gallery_photo">
+                        </figure>
+                        <figure class="gallery_item">
+                            <img src="img/hotel-2.jpg" alt="photo of hotel2" class="gallery_photo">
+                        </figure>
+                        <figure class="gallery_item">
+                            <img src="img/hotel-3.jpg" alt="photo of hotel3" class="gallery_photo">
+                        </figure>
+                    </div>
+
+                    <div class="overview">
+                        <h1 class="overciew_heading">
+                            Hotel Crown Casino
+                        </h1>
+
+                        <div class="overview_stars">
+                            <svg class="overview_icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview_icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview_icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview_icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview_icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+
+                        <div class="overview_location">
+                            <svg class="overview_icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Sydney, Australia</button>
+                        </div>
+
+                        <div class="overview_rating">
+                            <div class="overview_average">8.6</div>
+                            <div class="overview_rating-count">450 votes</div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
 </html>

@@ -14,7 +14,7 @@ Grey dark 3: #999
 
 :root {
   --color-primary: #eb2f64;
-  --color-rimary-light: #ff3366;
+  --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
 
   --color-grey-light-1: #faf9f9;
@@ -25,6 +25,10 @@ Grey dark 3: #999
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+
+  --color-white: #fff;
+
+  --shadow-dark: 0 2rem 5rem rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -49,11 +53,11 @@ body {
   line-height: 1.6;
   background-image: linear-gradient(
     to right bottom,
-    var(--color-rimary-light),
+    var(--color-primary-light),
     var(--color-primary-dark)
   );
-
+  color: var(--color-grey-dark-2);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
